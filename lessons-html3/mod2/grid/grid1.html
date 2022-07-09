@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .items {
+            width: 80%;
+            height: 80vh;
+            border: 1px solid red;
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-columns: 200px 1fr 200px;
+            /* px
+            % от доступного пространства
+            auto - автоматический расчет
+            1fr - fraction - свободное пространство*/
+            grid-template-rows: 100px 1fr 100px;
+            justify-items: stretch;
+            align-items: stretch;
+            grid-gap: 20px
+}
+
+        .item {
+            border: 1px solid blue;
+         }
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <!--   .items>.item.a$*9>{item$}-->
+    <div class="items">
+        <div class="item a1">item1</div>
+        <div class="item a2">item2</div>
+        <div class="item a3">item3</div>
+        <div class="item a4">item4</div>
+        <div class="item a5">item5</div>
+        <div class="item a6">item6</div>
+        <div class="item a7">item7</div>
+        <div class="item a8">item8</div>
+        <div class="item a9">item9</div>
+
+    </div>
+
+
+</body>
+
+</html>

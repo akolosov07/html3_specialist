@@ -1,0 +1,64 @@
+@import "node_modules/bootstrap/dist/css/bootstrap.css";
+
+.jumbotron {
+    color: #fff;
+    background-color: #f4511e;
+    padding: 100px 25px;
+}
+
+.logo {
+    font-size: 200px;
+    color: #f4511e;
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.pt20 {
+    padding-top: 20px;
+}
+
+.service span {
+    font-size: 50px;
+    color: #f4511e;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+}
+
+
+
+
+
+
+
+
+
+

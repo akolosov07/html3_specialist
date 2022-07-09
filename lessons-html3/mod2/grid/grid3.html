@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .wrapper {
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 200px 1fr 200px;
+      grid-template-rows: repeat(3, 100px);
+      grid-template-areas: 
+        "header header  header"
+        "nav    section aside"
+        "footer footer  aside";
+        
+      border: 1px solid red;
+    }
+    .wrapper>* {
+      border: 1px solid blue
+    }
+    header {
+     grid-area: header; 
+    }
+
+    nav {
+      grid-area: nav;
+    }
+
+    section {
+      grid-area: section;
+    }
+
+    aside {
+      grid-area: aside;
+    }
+
+    footer {
+      grid-area: footer;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>header</header>
+    <nav>nav</nav>
+    <section>section</section>
+    <aside>aside</aside>
+    <footer>footer</footer>
+  </div>
+</body>
+
+</html>

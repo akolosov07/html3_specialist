@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+}
+
+section {
+    width: 260px;
+    margin: auto;
+}
+
+div {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+}
+
+.color-palette(@color, @swatches, @step, @index: 0) when (@index =< (@swatches - 1)) {
+    .swatch-@{index} {
+        background-color: spin(@color, (@index * @step));
+    }
+    .color-palette(@color, @swatches, @step, (@index + 1));
+}
+
+.color-palette(#ff0000, 25, 14);
+.p {
+    font-size: 13px;
+    padding-top: 140px;
+    clear: both;
+}

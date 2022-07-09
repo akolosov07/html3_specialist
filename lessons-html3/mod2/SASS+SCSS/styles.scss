@@ -1,0 +1,14 @@
+@import "common-styles";
+
+body {
+	background: $mysupercolor;
+}
+
+.news__button {
+	@include button(200px, 80px, orangered);
+}
+
+.ad__submit {
+	@include button(100px, 40px, lightseagreen);
+	border: 1px solid $mysupercolor;
+}

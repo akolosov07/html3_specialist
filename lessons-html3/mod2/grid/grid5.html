@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .wrapper {
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 
+      [start] 200px [middle] 1fr [finish] 200px [end];
+      grid-template-rows: 
+      [start] minmax(100px, 1fr) [middle] 100px [finish] 200px [end];
+              
+      border: 1px solid red;
+    }
+    .wrapper>* {
+      border: 1px solid blue
+    }
+    header {
+     grid-column: start / end; 
+     grid-row: start;
+    }
+
+    nav {
+     grid-column: start; 
+     grid-row: middle;
+    }
+
+    section {
+     grid-column: middle; 
+     grid-row: middle;
+    }
+
+    aside {
+     grid-column: finish; 
+     grid-row: middle / end;
+    }
+
+    footer {
+     grid-column: start / finish; 
+     grid-row: finish;
+    }
+    .menu1 {display: grid;
+    grid-auto-flow: column;}
+    .inlines {display: inline-grid; 
+    grid-auto-flow: row;}
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+    <h1>header</h1>
+    <ul class="menu1">
+      <li><a href="">menu1</a></li>
+      <li><a href="">menu2</a></li>
+      <li><a href="">menu3</a></li>
+      <li><a href="">menu4</a></li>
+      <li><a href="">menu5</a></li>
+    </ul>
+    
+    </header>
+    <nav>nav</nav>
+    <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    <div class="inlines">
+      <div>text</div>
+      <div>text</div>
+      <div>text</div>
+      <div>text</div>
+      <div>text</div>
+    </div>
+    Veritatis ipsam autem, sint aperiam exercitationem ab quasi numquam cum quam error.</section>
+    <aside>aside</aside>
+    <footer>footer</footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html {
+	overflow: hidden;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	perspective: 1px;
+	transform-style: preserve-3d;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.slide {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+.slide1 {
+	background-image: url("1.jpg");
+	background-size: cover;
+}
+
+.slide2:before {
+	position: absolute;
+	content: "";
+	background-image: url("2.jpg");
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+	transform: translateZ(-1px) scale(2);
+}
+
+.slide3 {
+	background-image: url("3.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.slide4 {
+	background: orange;
+}
+
+h2 {
+	color: white;
+	font-size: 10vw;
+	text-align: center;
+	height: 100vh;
+	line-height: 100vh;
+	text-shadow: 0 0 20px #000;
+}

@@ -1,0 +1,17 @@
+body {
+  background: #333;
+  color: #f00;
+}
+.myblock {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  color: #f00;
+  border: 1px solid #f00;
+}
+
+/*
+  Аналог Коалы
+  https://prepros.io/
+*/

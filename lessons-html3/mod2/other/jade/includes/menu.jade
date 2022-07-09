@@ -1,0 +1,9 @@
+//- includes/menu.jade
+- var x = 5;
+- var items = ['item1', 'item2', 'item3','item4','item5','item6','item7']
+nav.menu1  
+  ul  
+   - for (var i=0; i<x; i++) {     
+          li
+            a(href="#").link= items[i]
+   - }

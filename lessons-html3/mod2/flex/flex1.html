@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Эксперименты с FLEX</title>
+	<style>
+	/* 
+	
+	!!!CSS-столбцы columns не работают с flex-контейнером
+	!!! float, clear и vertical-align не работают с flex-элементами 
+	display: flex - отображение элементов контейнера в режиме flex
+	flex-wrap: wrap | nowrap  - разрешение разбивать на строки
+	flex-direction:row | column  - направление размещения
+	align-items: flex-start | flex-end ... - способ выравнивания элкментов;
+	justify-content: выравнивание содержимого: flex-start (default) | flex-end
+	| center | space-between | space-around
+	*/ 
+	
+	.main {width:90%; margin:auto; }
+	
+	.class {margin:10px; vertical-align:top}
+	
+	.class.a {padding:10px 50px 20px; background:#f66; width:70px; height:100px}
+	.class.b {padding:10px 30px 60px; background:#6f6; width:50px;height:200px}
+	.class.c {padding:10px 20px 30px; background:#66f; width:20px;height:150px}
+	</style>
+</head>
+<body>
+<h1>Эксперименты с FLEX</h1>
+<div class="main">
+
+	<div class="class a">1</div>
+	<div class="class b">2</div>
+	<div class="class c">3</div>
+	<div class="class a">4</div>
+	<div class="class b">5</div>
+	<div class="class c">6</div>
+	<div class="class a">7</div>
+	<div class="class b">8</div>
+	<div class="class c">9</div>
+	
+</div>
+	
+</body>
+</html>

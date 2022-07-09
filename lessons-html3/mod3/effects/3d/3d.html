@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #my3d {
+            perspective: 200px;
+            perspective-origin: top left;
+        }
+
+        #my3d li {
+            float: left;
+
+            display: block;
+            background: tomato;
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            border-radius: 5px;
+
+            transform: rotateX(50deg);
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row wrap;
+        }
+
+        .container div {
+            height: 170px;
+            width: 250px;
+            perspective: 500px;
+            padding: 10px;
+        }
+
+        .container h3 {
+            font-size: 2em;
+            margin: 0 0 30px;
+            text-align: center;
+        }
+
+        .top, .bottom {
+            position: absolute;
+            bottom: 0;
+            transform: rotateX(45deg);
+        }
+
+        .top {
+            background: rgba(255, 0, 0, .8);
+        }
+
+        .bottom {
+            background: rgba(0, 255, 0, .8);
+        }
+
+        .style-flat {
+            transform-style: flat;
+        }
+
+        .style-3d {
+            transform-style: preserve-3d;
+        }
+    </style>
+</head>
+<body>
+
+<ul id="my3d">
+    <li>asdasdasd</li>
+    <li>asdasdasdasdas</li>
+    <li>dasdasdasadasd</li>
+</ul>
+
+<div class="container">
+    <div class="style-flat">
+        <h3>Flat</h3>
+        <div class="top">
+            <div class="bottom"></div>
+        </div>
+    </div>
+    <div class="style-3d">
+        <h3>Preserve-3d</h3>
+        <div class="top">
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

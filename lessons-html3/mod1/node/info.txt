@@ -1,0 +1,6 @@
+Установка сборщика
+
+npm install borschik -g
+
+Запуск
+borschik --input=import.css --minimize=no

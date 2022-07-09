@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .wrapper {
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 
+      [start] 200px [middle] 1fr [finish] 200px [end];
+      grid-template-rows: 
+      [start] 100px [middle] 100px [finish] 200px [end];
+              
+      border: 1px solid red;
+    }
+    .wrapper>* {
+      border: 1px solid blue
+    }
+    header {
+     grid-column: start / end; 
+     grid-row: start;
+    }
+
+    nav {
+     grid-column: start; 
+     grid-row: middle;
+    }
+
+    section {
+     grid-column: middle; 
+     grid-row: middle;
+    }
+
+    aside {
+     grid-column: finish; 
+     grid-row: middle / end;
+    }
+
+    footer {
+     grid-column: start / finish; 
+     grid-row: finish;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>header</header>
+    <nav>nav</nav>
+    <section>section</section>
+    <aside>aside</aside>
+    <footer>footer</footer>
+  </div>
+</body>
+
+</html>

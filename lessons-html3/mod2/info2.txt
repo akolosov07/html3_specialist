@@ -1,0 +1,33 @@
+https://www.virtualbox.org/
+
+Chrome
+
+XAMPP
+https://www.apachefriends.org/ru/download.html
+
+http://localhost/
+http://127.0.0.1/
+
+C:\xampp\htdocs
+
+GIT
+https://git-scm.com/
+
+NPM (Node Package Manager)
+https://nodejs.org/
+
+Node.js command prompt
+
+Установка Bower:
+npm install -g bower
+
+Консоль GIT Bash
+ls - список файлов и папок
+ls -al - подробный список файлов и папок
+cd .. - подняться на уровень выше
+cd название папки - перейти в папку
+
+/c/xampp/htdocs/polymer-example
+$ _
+
+https://www.polymer-project.org
