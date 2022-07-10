@@ -1,7 +1,77 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 
 <head>
   <title>Исправляем ошибки</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .bluespan {
+      color: blue;
+      font-size: 14px;
+    }
+    .greenArial {
+      color: green;
+      font-family: Arial;
+    }
+    .redColor {
+      color: red;
+    }
+    .blueArial {
+      color: blue;
+      font-family: Arial;
+    }
+    .table {
+      border: 1px;
+      border-spacing: 0px;
+      padding: 5px;
+    }
+    .tdClass {
+      vertical-align:top
+    }
+
+
+
+    .predictions-online__span {
+      color: blue;
+      font-size: 14px;
+    }
+    .horoscope__span {
+      color: green;
+      font-family: Arial;
+    }
+    .horoscope-link__span {
+      color: green;
+      font-family: Arial;
+    }
+    .horoscope-2018__span {
+      color: green;
+      font-family: Arial;
+    }
+    .horoscope-2018-tests__span {
+      color: green;
+      font-family: Arial;
+    }
+    .horoscope-2018-moon__span {
+      color: blue;
+      font-family: Arial;
+    }
+    .horoscope-2018-different__span {
+      color: blue;
+      font-family: Arial;
+    }
+    .horoscope-2018-news__span {
+      color: blue;
+      font-family: Arial;
+    }
+    .horoscope-2018-news__td {
+      vertical-align:top;
+    }
+    .horoscope-2018-news-link {
+      width: 100px;
+    }
+  </style>
 </head>
 
 <body>
@@ -18,104 +88,108 @@ block-name__elem-name_mod-name_mod-val
 
   <div id="wrapper">
 
-    <div>
-      <h1>Гадание онлайн</h1>
-      <p><img width="100" src="http://www.predskazanie.ru/pic/gadania/book.jpg"></p>
+    <div class="predictions-online">
+      <h1 class="predictions-online__h1">Гадание онлайн</h1>
+      <p><img width="100" alt="1" src="http://www.predskazanie.ru/pic/gadania/book.jpg"></p>
       <p>Собранные здесь бесплатные гадания онлайн помогут Вам ответить на интересующий вопрос, принять правильное решение и просто приятно провести время. В коллекции на Предсказание.Ru:</p>
       <p>-
-        <font color="blue" size="4">традиционные гадания</font>: на домино, Рунах, Книге перемен, различные гадания на картах (Ленорман, Таро, простые карты), гадания по цитатам, гадание на хрустальном шаре, народные гадания;</p>
+        <span class="predictions-online__span">традиционные гадания</span>: на домино, Рунах, Книге перемен, различные гадания на картах (Ленорман, Таро, простые карты), гадания по цитатам, гадание на хрустальном шаре, народные гадания;</p>
       <p>-
-        <font color="blue" size="4">авторские гадания</font>: Талисман дня, Зодиак, Абстракция или гадание по чакрам;</p>
+        <span class="predictions-online__span">авторские гадания</span>: Талисман дня, Зодиак, Абстракция или гадание по чакрам;</p>
       <p>-
-        <font color="blue" size="4">- старинные гадания</font>, любимые в прошлых веках: Книга Судеб, гадание Екатерины, арабское гадание, Зеркало Мира, гадание Пифагора, Колесо Фортуны, Оракул Маджонг, гадание Иероглифика, Оракул Сибиллы и гадание на буквах греческого алфавита;</p>
+        <span class="predictions-online__span">- старинные гадания</span>, любимые в прошлых веках: Книга Судеб, гадание Екатерины, арабское гадание, Зеркало Мира, гадание Пифагора, Колесо Фортуны, Оракул Маджонг, гадание Иероглифика, Оракул Сибиллы и гадание на буквах греческого алфавита;</p>
       <p>-
-        <font color="blue" size="4">современные гадания бесплатно</font>: гадание на парня или девушку, Золотая Рыбка, гадание на сердечках, гадание &quot;да-нет&quot; и другие.</p>
-      <p><img src="http://www.predskazanie.ru/pic/new.png"> <b><a href="#">Гадания на картах Таро</a></b> - добавлены новые онлайн-расклады: гадание на желание, &quot;Выйду ли я замуж&quot;, гадание на измену, Карта дня Таро, расклад &quot;Тайна Жрицы&quot;, гадание Таро &quot;Древо влюбленных&quot; на отношения и любовь, а также значение карт Таро.</p>
+        <span class="predictions-online__span">современные гадания бесплатно</span>: гадание на парня или девушку, Золотая Рыбка, гадание на сердечках, гадание &quot;да-нет&quot; и другие.</p>
+      <p><img alt="1" src="http://www.predskazanie.ru/pic/new.png"> <b><a class="predictions-online-link" href="#">Гадания на картах Таро</a></b> - добавлены новые онлайн-расклады: гадание на желание, &quot;Выйду ли я замуж&quot;, гадание на измену, Карта дня Таро, расклад &quot;Тайна Жрицы&quot;, гадание Таро &quot;Древо влюбленных&quot; на отношения и любовь, а также значение карт Таро.</p>
       <p><b><a href="#" title="Гадания онлайн">Все гадания онлайн >>></a></b></p>
     </div>
 
     <!-- первая часть -->
-    <div>
+    <div class="horoscope">
       <h2>
-        <font color="green" face="arial">Гороскоп</font>
+        <span class="horoscope__span">Гороскоп</span>
       </h2>
-      <p><img src="http://www.predskazanie.ru/pic/gadania/676567.jpg" width="100"></p>
+      <p><img class="horoscope__img" alt="1" src="http://www.predskazanie.ru/pic/gadania/676567.jpg" width="100"></p>
       <p>Гороскоп - это астрологическая рекомендация для вас, предсказание звёзд, с помощью которого Вы сможете привести к гармонии свою жизнь и судьбу. Это прекрасное средство узнать больше о себе и своем будущем. В нашей коллекции Вы сможете найти:</p>
       <p> - классические прогнозы: гороскоп на 2017 год, любовный гороскоп, гороскоп на сегодня и на месяц, личность по знаку Зодиака и другие;</p>
       <p> - индивидуальные прогнозы: любовный гороскоп по дате рождения, гороскоп красоты (расчет по Венере), гороскоп по дате рождения, гороскоп совместимости (несколько вариантов расчета);</p>
       <p> - популярные авторские гороскопы: модный, темперамента, флирта, подарков, знакомств, диеты и здоровья, и многие другие.</p>
-      <p><b><a href="#"><font color="red">Коллекция гороскопов &gt;&gt;&gt;</font></a></b></p>
+      <p><b>
+        <a class="horoscope-link" href="#">
+        <span class="horoscope-link__span">Коллекция гороскопов &gt;&gt;&gt;</span>
+      </a></b>
+    </p>
     </div>
 
     <!-- вторая часть -->
-    <div>
+    <div class="horoscope-2018">
       <h2>
-        <font color="green" face="arial">Гороскоп на 2018 год</font>
+        <span class="horoscope-2018__span">Гороскоп на 2018 год</span>
       </h2>
-      <p><img src="//www.predskazanie.ru/pic/horos/goroskop-na-2018-god.jpg" width="100px"></p>
-      <p><b><a title="Гороскоп на 2018 год" href="//www.predskazanie.ru/goroskop-2018/">Гороскоп на 2018 год по знакам Зодиака</a></b> - Здесь вы найдёте подробный зодиакальный гороскоп на 2018 год, который даст ответы на все вопросы, которые могут у вас возникнуть. В нём учтены все значимые астрологические аспекты. Он точен, объективен, содержателен и, следовательно, информативен и полезен.</p>
-      <p><b><a title="Восточный гороскоп на 2018 год" href="//www.predskazanie.ru/vostochnyi-goroskop-2018/">Восточный гороскоп на 2018 год</a></b> - Каким будет год Земляной Собаки? Восточный гороскоп даст исчерпывающие ответы каждому. Прочтите и убедитесь…</p>
-      <p><b><a title="Любовный гороскоп на 2018 год по дате рождения" href="//www.predskazanie.ru/horoscope-2018/">Любовный гороскоп на 2018 год по дате рождения</a></b> - Данный любовный гороскоп учитывает индивидуальные астрологические аспекты. Прислушайтесь к астрологическим советам, которые помогут вам максимально раскрыть свои возможности.</p>
-      <p><b><a title="Гороскоп рождённых в 2018 год Собаки" href="//www.predskazanie.ru/publications/articles/0278.php">Гороскоп рождённых в год Собаки</a></b> - Что предсказывают звёзды людям знака Собаки? Читайте про черты характера, отличия по элементам, сферы успеха и совместимость в гороскопе рождённых под этим знаком.</p>
-      <p><b><a title="Предсказания на 2018 год" href="//www.predskazanie.ru/predskazaniya-2018.php">Предсказания на 2018 год</a></b> - Предлагаем вашему вниманию предсказания различных прорицателей, относящиеся к 2018 году. Читайте прогнозы Ванги, Мишеля Нострадамуса и другие.</p>
-      <p><b><a title="Персональное число года 2018" href="//www.predskazanie.ru/year/">Персональное число года</a></b> - Как узнать свой личный нумерологический прогноз 2018? Расчёт, основанный на 9-летних циклах, подскажет, какой по счёту период наступает именно для вас.</p>
+      <p><img class="horoscope-2018_img" alt="1" src="//www.predskazanie.ru/pic/horos/goroskop-na-2018-god.jpg" width="100"></p>
+      <p><b><a class="horoscope-2018-link" title="Гороскоп на 2018 год" href="//www.predskazanie.ru/goroskop-2018/">Гороскоп на 2018 год по знакам Зодиака</a></b> - Здесь вы найдёте подробный зодиакальный гороскоп на 2018 год, который даст ответы на все вопросы, которые могут у вас возникнуть. В нём учтены все значимые астрологические аспекты. Он точен, объективен, содержателен и, следовательно, информативен и полезен.</p>
+      <p><b><a class="horoscope-2018-link" title="Восточный гороскоп на 2018 год" href="//www.predskazanie.ru/vostochnyi-goroskop-2018/">Восточный гороскоп на 2018 год</a></b> - Каким будет год Земляной Собаки? Восточный гороскоп даст исчерпывающие ответы каждому. Прочтите и убедитесь…</p>
+      <p><b><a class="horoscope-2018-link" title="Любовный гороскоп на 2018 год по дате рождения" href="//www.predskazanie.ru/horoscope-2018/">Любовный гороскоп на 2018 год по дате рождения</a></b> - Данный любовный гороскоп учитывает индивидуальные астрологические аспекты. Прислушайтесь к астрологическим советам, которые помогут вам максимально раскрыть свои возможности.</p>
+      <p><b><a class="horoscope-2018-link" title="Гороскоп рождённых в 2018 год Собаки" href="//www.predskazanie.ru/publications/articles/0278.php">Гороскоп рождённых в год Собаки</a></b> - Что предсказывают звёзды людям знака Собаки? Читайте про черты характера, отличия по элементам, сферы успеха и совместимость в гороскопе рождённых под этим знаком.</p>
+      <p><b><a class="horoscope-2018-link" title="Предсказания на 2018 год" href="//www.predskazanie.ru/predskazaniya-2018.php">Предсказания на 2018 год</a></b> - Предлагаем вашему вниманию предсказания различных прорицателей, относящиеся к 2018 году. Читайте прогнозы Ванги, Мишеля Нострадамуса и другие.</p>
+      <p><b><a class="horoscope-2018-link" title="Персональное число года 2018" href="//www.predskazanie.ru/year/">Персональное число года</a></b> - Как узнать свой личный нумерологический прогноз 2018? Расчёт, основанный на 9-летних циклах, подскажет, какой по счёту период наступает именно для вас.</p>
 
-      <div>
+      <div class="horoscope-2018-tests">
         <h3>
-          <font color="blue" face="arial">Астрологические тесты</font>
+          <span class="horoscope-2018-tests__span">Астрологические тесты</span>
         </h3>
         <p>В этом разделе собраны различные астрологические тесты. Вы можете узнать планету дня своего рождения, определить, где искать удачу, рассчитать судьбоносные годы, пройти тест на магические способности.</p>
         <p>Звезды подскажут вам, как познакомиться на вечеринке и как завоевать мужчину своей мечты.</p>
         <p>Вы можете самостоятельно рассчитать благоприятные дни для свадьбы, узнать, как день свадьбы влияет на ваш брак.</p>
       </div>
 
-      <div>
+      <div class="horoscope-2018-moon">
         <h3>
-          <font color="blue" face="arial">Лунный календарь</font>
+          <span class="horoscope-2018-moon__span">Лунный календарь</span>
         </h3>
         <p>Этот раздел предлагает вам несколько астрологических прогнозов, которые помогут вам жить в гармонии с природой: лунный календарь, календарь для определения пола ребенка, лунный календарь стрижек волос и календарь зачатия.</p>
       </div>
 
       <h3>
-        <font color="blue" face="arial">Разное</font>
+        <span class="horoscope-2018-different__span">Разное</span>
       </h3>
-      <p><img src="http://www.predskazanie.ru/pic/new.png"> <b><a title="Число Гуа" href="#" >Число Гуа</a></b> - это ответ на многие вопросы, получив который вы улучшите свою жизнь. В этом разделе вы найдете бесплатный онлайн расчет и значение числа Гуа.</p>
-      <p><b><a href="#" title="Имена">Значение имен</a></b> - в этом разделе вы найдете значение 2332 женских и мужских имен.</p>
+      <p><img class="horoscope-2018-different__img" alt="1" src="http://www.predskazanie.ru/pic/new.png"> <b><a title="Число Гуа" href="#" >Число Гуа</a></b> - это ответ на многие вопросы, получив который вы улучшите свою жизнь. В этом разделе вы найдете бесплатный онлайн расчет и значение числа Гуа.</p>
+      <p><b><a class="horoscope-2018-different__link" href="#" title="Имена">Значение имен</a></b> - в этом разделе вы найдете значение 2332 женских и мужских имен.</p>
 
-      <div>
+      <div class="horoscope-2018-numbers">
         <h3>
-          <font color="blue" face="arial">Нумерология</font>
+          <span class="horoscope-2018-numbers__span">Нумерология</span>
         </h3>
         <p>Древняя мистика нумерологии откроет вам тайны мира чисел: что значит ваше имя и какую информацию несет в себе, узнать звезду своей удачи и планиду. Вы можете узнать, кем были в прошлой жизни, рассчитать с помощью магического квадрата личные характеристики даты рождения, а также рассчитать свою совместимость с партнером по дате рождения.</p>
       </div>
 
-      <div>
+      <div class="horoscope-2018-news">
         <h3>
-          <font color="blue" face="arial">Новые статьи</font>
+          <span class="horoscope-2018-news__span">Новые статьи</span>
         </h3>
 
-        <table border="1" cellspacing="0" cellpadding="5">
+        <table class="horoscope-2018-news__table">
           <tr>
-            <td valign="top">
-              <p><a href="#"><img src="http://www.predskazanie.ru/pic/predskazanie-nostradamusa-2018.jpg" width="100" ></a></p>
-              <p>- <b><a href="#">Предсказания Нострадамуса на 2018 год</a></b></p>
+            <td class="horoscope-2018-news__td">
+              <p><a class="horoscope-2018-news-link" href="#"><img alt="1" src="http://www.predskazanie.ru/pic/predskazanie-nostradamusa-2018.jpg"></a></p>
+              <p>- <b><a class="horoscope-2018-news-link-simple" href="#">Предсказания Нострадамуса на 2018 год</a></b></p>
               <p>Что предсказывал знаменитый прорицатель? Какие потрясения нас ждут в будущем? Читайте предсказания Нострадамуса о геополитике, экономике, природе и катаклизмах.</p>
             </td>
-            <td valign="top">
-              <p><a href="#"><img src="http://www.predskazanie.ru/pic/predskazanie-edgara-kejsi-na-2018.jpg" width="100" ></a></p>
-              <p>- <b><a href="#">Предсказания Эдгара Кейси на 2018 год</a></b></p>
+            <td class="horoscope-2018-news__td">
+              <p><a class="horoscope-2018-news-link" href="#"><img alt="1" src="http://www.predskazanie.ru/pic/predskazanie-edgara-kejsi-na-2018.jpg"></a></p>
+              <p>- <b><a class="horoscope-2018-news-link-simple" href="#">Предсказания Эдгара Кейси на 2018 год</a></b></p>
               <p>Прогнозы Кейси на 2018 год предвещает необычные и даже пугающие события в мире, которые несомненно интересны и заслуживают нашего внимания.</p>
             </td>
           </tr>
           <tr>
-            <td valign="top">
-              <p><a href="#"><img src="http://www.predskazanie.ru/pic/predskazanie-vangi-2018.jpg" width="100" ></a></p>
-              <p>- <b><a href="#">Предсказания Ванги на 2018 год</a></b></p>
+            <td class="horoscope-2018-news__td">
+              <p><a class="horoscope-2018-news-link" href="#"><img alt="1" src="http://www.predskazanie.ru/pic/predskazanie-vangi-2018.jpg"></a></p>
+              <p>- <b><a class="horoscope-2018-news-link-simple" href="#">Предсказания Ванги на 2018 год</a></b></p>
               <p>Предсказания знаменитой прорицательницы Ванги на 2018 год вселяют надежду, хоть предстоящий год и не будет простым для человечества.</p>
             </td>
-            <td valign="top">
-              <p><a href="#"><img src="http://www.predskazanie.ru/pic/taro-prognoz-na-2018-god.jpg" width="100" ></a></p>
-              <p>- <b><a href="#">Общий таро-прогноз на 2018 год: Сила</a></b></p>
+            <td class="horoscope-2018-news__td">
+              <p><a class="horoscope-2018-news-link" href="#"><img alt="1" src="http://www.predskazanie.ru/pic/taro-prognoz-na-2018-god.jpg"></a></p>
+              <p>- <b><a class="horoscope-2018-news-link-simple" href="#">Общий таро-прогноз на 2018 год: Сила</a></b></p>
               <p>2018 год символизирует аркан Сила. Предстоящим годом будут управлять энергия, страсть и эмоции. Смотрите таро-прогноз на 2018-ый.</p>
             </td>
           </tr>

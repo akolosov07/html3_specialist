@@ -4,61 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+
+    <style>
+        .header__h1 {
+            color:red
+        }
+        .header-nav-items {
+            display: table;
+            padding:10px;
+            border-spacing: 10px;
+        }
+        .header-nav-items__item {
+            display: table-cell; 
+            padding:10px;  
+            background:#ccc; 
+            border-radius:10px
+        }
+        .header-nav-items__item-link {
+            text-decoration:none
+        }
+        .header-nav-items__item_active {
+            background:rgb(102, 100, 100); 
+        }
+        .cards {
+            padding: 10px; 
+            overflow:auto; 
+            background:#eee
+        }
+        .cards-card {
+            border:1px solid blue; 
+            margin:10px; 
+            padding:10px;
+            float: left; 
+            width:30%; 
+            box-sizing: border-box
+        }
+        .cards-card_active {
+            border:1px solid red;
+        }
+        .cards-card__h3 {
+            color:blue
+        }
+        .welcome-info__h2 {
+            color:blue
+        }
+        .welcome-news__h2 {
+            color:green
+        }
+        .footer {
+            background: #eee; padding: 5px
+        }
+    </style>
 </head>
 
 <body>
 
-    <div>
-        <header>
-            <h1 style="color:red">Наш замечательный сайт</h1>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header__h1">Наш замечательный сайт</h1>
 
-            <nav>
-                <ul style="display: table;  padding:10px;border-spacing: 10px;">
-                    <li style="display: table-cell; padding:10px;  background:#eee; border-radius:10px"><a href="#" style="text-decoration:none">Основная</a></li>
-                    <li style="display: table-cell; padding:10px; background:#eee;border-radius:10px"><a href="#" style="text-decoration:none">Курсы</a>
+            <nav class="header-nav">
+                <ul class="header-nav-items">
+                    <li class="header-nav-items__item header-nav-items__item_active">
+                        <a class="header-nav-items__item-link" href="#">Основная</a></li>
+                    <li class="header-nav-items__item">
+                        <a class="header-nav-items__item-link" href="#">Курсы</a>
                     </li>
-                    <li style="display: table-cell; padding:10px; background:#eee;border-radius:10px"><a href="#" style="text-decoration:none">О Центре</a></li>
-                    <li style="display: table-cell; padding:10px; background:#eee;border-radius:10px"><a href="#" style="text-decoration:none">Контакты</a></li>
+                    <li class="header-nav-items__item">
+                        <a class="header-nav-items__item-link" href="#">О Центре</a></li>
+                    <li class="header-nav-items__item">
+                        <a class="header-nav-items__item-link" href="#">Контакты</a></li>
                 </ul>
             </nav>
         </header>
-        <div>
+        <div class="main" role="main">
 
-            <div style="padding: 10px; overflow:auto; background:#eee">
-                <div style="border:1px solid blue; margin:10px; padding:10px; float: left; width:30%; box-sizing: border-box">
-                    <h3 style="color:blue">Ближайшие курсы</h3>
+            <div class="cards">
+                <div class="cards-card cards-card_active">
+                    <h3 class="cards-card__h3">Ближайшие курсы</h3>
                     <p >Lorem ipsum.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores perspiciatis, dignissimos. Doloremque ullam perferendis, eligendi autem, tempora deserunt.</p>
                     <a href="#">Читать далее</a>
                 </div>
-                <div style="border:1px solid blue; margin:10px; padding:10px;float: left; width:30%; box-sizing: border-box">
-                    <h3 style="color:blue">Курсы со скидкой</h3>
+                <div class="cards-card">
+                    <h3 class="cards-card__h3">Курсы со скидкой</h3>
                     <p>Voluptas, cupiditate?</p>
                     <p>Ratione dolor illum cum perferendis voluptates unde, necessitatibus quaerat quae odit adipisci ducimus minus libero quo, corrupti rerum.</p>
                     <a href="#">Читать далее</a>
                 </div>
-                <div style="border:1px solid blue; margin:10px; padding:10px;float: left; width:30%; box-sizing: border-box">
-                    <h3 style="color:blue">Популярные курсы</h3>
+                <div class="cards-card">
+                    <h3 class="cards-card__h3">Популярные курсы</h3>
                     <p>Culpa, officiis.</p>
                     <p>Voluptas iure id facilis impedit totam sapiente aspernatur, in culpa accusantium laborum sint repellendus, voluptatem eos mollitia consectetur?</p>
                     <a href="#">Читать далее</a>
                 </div>
             </div>
-            <div>
-                <div>
-                    <h2 style="color:blue">Приветствуем Вас</h2>
+            <div class="welcome">
+                <div class="welcome-info">
+                    <h2 class="welcome-info__h2">Приветствуем Вас</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nisi quo corporis quibusdam. Tempora, tempore. Aspernatur necessitatibus dolores cumque, voluptas non quibusdam voluptatem perspiciatis saepe, officia velit ipsam consequatur! Dignissimos.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum neque aliquid reprehenderit rem eum ex officiis tenetur! Quod pariatur ipsam ullam delectus accusantium. Illum ad impedit totam natus quasi non ipsa sunt, ratione praesentium, debitis iusto error voluptate, neque rem recusandae veritatis dolor laborum consectetur ab maxime earum. Beatae atque, cumque placeat quae enim distinctio doloribus commodi. Rerum, aperiam. Fuga!</p>
                     <a href="#">Читать далее</a>
                 </div>
-                <div>
-                    <h2 style="color:green">Новости</h2>
-                    <div>
+                <div class="welcome-news">
+                    <h2 class="welcome-news__h2">Новости</h2>
+                    <div class="welcome-news-item">
                         <span>21 ноябрь 2016</span>
                         <p><a href="#">Lorem ipsum dolor.</a></p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
-                    <div>
+                    <div class="welcome-news-item">
                         <span>22 ноябрь 2016</span>
                         <p><a href="#">Facere, corporis, possimus?</a></p>
                         <p>Placeat dolore amet deleniti, quas est vero magnam.</p>
@@ -66,7 +121,7 @@
                     <a href="#">Читать далее</a>
                 </div>
             </div>
-            <footer style="background: #eee; padding: 5px">
+            <footer class="footer">
                 <p>lorem3 <a href="#">lorem2</a></p>
             </footer>
         </div>
