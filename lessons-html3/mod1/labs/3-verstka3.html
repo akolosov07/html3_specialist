@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anketa Miranda</title>
+    <style>
+        :root {
+            --px5: 5px;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            position: relative;
+            margin: 10px;
+        }
+        .left {
+            width: 100px;
+            height: 400px;
+            background: #555;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+        }
+        .right {
+            width: 400px;
+            height: 380px;
+            border: 1px solid black;
+            background: white;
+            position: absolute;
+            top: 0;
+            left: 120px;
+            border-radius: 10px;
+        }
+        .m0 {
+            z-index: 10;
+        }
+        .m10 {
+            z-index: 5;
+            top: 10px;
+            left: 130px;
+        }
+        .m20 {
+            z-index: 0;
+            top: 20px;
+            left: 140px;
+        }
+        .anketa-header {
+            display: flex;
+            height: 60px;
+        }
+        .anketa-header__h1 {
+            padding: 5px 10px 10px 10px;
+            font-weight: normal;
+            font-family: Arial;
+        }
+        .anketa-header-button {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+        .anketa-header-button-text {
+            color: aliceblue;
+            vertical-align: middle;
+        }
+        .anketa-header-button-red {
+            background: rgb(189, 67, 67);
+            margin-left: 80px;  
+        } 
+        .anketa-header-button-green {
+            background: rgb(81, 198, 136);
+            margin-left: 10px;
+        }
+        .anketa-header-button-text-red {
+            padding: 15px;
+        }
+        .anketa-header-button-text-green {
+            padding: 15px 9px 15px 9px;
+        }
+        .anketa-body {
+            position: absolute;
+        }
+        .anketa-body-info {
+            position: absolute;
+            padding: 10px;
+        }
+        .anketa-body-photo {
+            position: absolute;
+            left: 200px;
+        }
+        .anketa-body-photo__img {
+            height: 180px;
+            width: 180px;
+            margin: 20px 5px;
+            border-radius: var(--px5);
+        }
+        .anketa-footer {
+           bottom: 10px;
+           left: 20px;
+           position: absolute;
+        }
+        .anketa-body__hr {
+            position: absolute;
+            top: 60px;
+            width: 100%;
+        }
+        .footer__hr {
+            position: absolute;
+            bottom: 50px;
+            width: 100%;
+        }
+        .anketa-body-about__hr {
+            position: absolute;
+            top: 150px;
+            width: 180px;
+        }
+        .anketa-body-about {
+            top: 90px;
+            position: absolute;
+            padding: 10px;
+        }
+        .menu-item {
+            position: relative;
+            background: rgb(142, 137, 137);
+            height: 30px;
+        }
+        .menu-item-upper {
+            border-radius: 10px 10px 0 0;
+        }
+        .menu-item-avatar {
+            position: absolute;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            margin: 3px;
+        }
+        .menu-item-avatar-profile {
+            position: absolute;
+            background: rgb(189, 67, 67);
+            left: 5px;
+            top: 2px;
+        }
+        .menu-item-text {
+            position: absolute;
+            font-size: 12px;
+            font-family: Arial;
+            text-align: center;
+            padding: 5px;
+            color: rgb(201, 215, 227);
+            left: 30px;
+        }
+        .menu-item-meet {
+            height: 100px;
+            background: rgb(54, 54, 54);
+        }
+        .menu-item-avatar-meet {
+            position: absolute;
+            background: rgb(205, 162, 52);
+            left: 5px;
+            top: 2px;
+        }
+        .menu-item-meet-search {
+            position: absolute;
+            top: 30px;
+            font-size: 8px;
+            font-family: Arial;
+            text-align: center;
+            width: 100%;
+            background: rgb(116, 113, 113);
+            height: 20px;
+            width: 90px;
+            margin: 0 5px 0 5px;
+            border-radius: 15px;
+        }
+        .menu-item-meet-search-text {
+            color: aliceblue;
+            font-weight: bold;
+            padding: 5px;
+        }
+        .menu-item-avatar-messages {
+            position: absolute;
+            background: rgb(205, 190, 97);
+            left: 5px;
+            top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+            <div class="left">
+                <div id="menu">
+                    <ul class="menu__ul">
+                        <li class="menu-item menu-item-upper">
+                            <div class="menu-item-avatar menu-item-avatar-profile">
+                            </div>
+                            <div class="menu-item-text">Profile</div>
+                        </li>
+                        <li class="menu-item menu-item-meet">
+                            <div class="menu-item-avatar menu-item-avatar-meet">
+                            </div>
+                            <div class="menu-item-text">Meet</div>
+                            <div class="menu-item-meet-search">
+                               <div class="menu-item-meet-search-text">MALES & FEMAILS</div> 
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-avatar menu-item-avatar-messages">
+                            </div>
+                            <div class="menu-item-text">Messages</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+        <div class="right m0">
+            <div class="anketa-header">
+                <h1 class="anketa-header__h1">Interested?</h1>
+                <div class="anketa-header-button anketa-header-button-red">
+                    <div class="anketa-header-button-text anketa-header-button-text-red">NO</div>
+                </div>
+                <div class="anketa-header-button anketa-header-button-green">
+                    <div class="anketa-header-button-text anketa-header-button-text-green">YES</div>
+                </div>
+            </div>
+            <hr class="anketa-body__hr">
+            <hr class="anketa-body-about__hr">
+            <div class="anketa-body">
+                <div class="anketa-body-info">
+                    <div class="anketa-body-info-text-name">Miranda</div>
+                </div>
+                <div class="anketa-body-about">
+                    <div class="anketa-body-about-name">About</div>
+                </div>
+                <div class="anketa-body-photo">
+                    <img class="anketa-body-photo__img" src="img/miranda.JPG">
+                </div>
+            </div>
+            <hr class="footer__hr">
+            <div class="anketa-footer">
+                <div class="anketa-footer-text">Footer</div>
+            </div>
+        </div>
+        <div class="right m10"></div>
+        <div class="right m20"></div>
+    </div>
+</body>
+</html>
