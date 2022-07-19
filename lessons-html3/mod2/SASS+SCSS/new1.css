@@ -1,0 +1,22 @@
+.new {
+  color: red;
+  font-weight: bold;
+}
+.new span {
+  text-transform: uppercase;
+}
+.new i {
+  color: green;
+}
+
+.box {
+  color: green;
+}
+.box__item {
+  border: 1px solid green;
+}
+.box__item_new {
+  border: 1px solid green;
+}
+
+/*# sourceMappingURL=new1.css.map */

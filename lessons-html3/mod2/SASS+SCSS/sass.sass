@@ -1,7 +1,14 @@
+$color1: green
 .new 
- color: #ff7b29
+ color: red
  font-weight: bold
  span 
   text-transform: uppercase 
  i 
-  color: green
+  color: $color1
+.box
+ color: $color1
+ &__item
+  border:1px solid $color1
+  &_new
+   border: 1px solid $color1

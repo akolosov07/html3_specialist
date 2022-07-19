@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            display: grid;
+        }
+        .outer-grid-cell {
+            min-height: 200px; 
+            min-width: 200px;
+            border: 1px solid;
+            padding: 10px;
+        }
+        .header {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+        }
+        .main-search {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        .main-read {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        .main-buy {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+        .footer {
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+        }
+
+        .footer-grid-wrapper {
+            display: grid;
+        }
+        .footergrid-cell {
+            min-height: 90px; 
+            min-width: 22px;
+            border: 1px solid;
+            padding: 3px;
+        }
+        .footergrid-1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+        .footergrid-2 {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+        .footergrid-3 {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+        .footergrid-4 {
+            grid-column: 4 / 5;
+            grid-row: 1 / 2;
+        }
+        .footergrid-5 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        .footergrid-6 {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        .footergrid-7 {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+        .footergrid-8 {
+            grid-column: 4 / 5;
+            grid-row: 2 / 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header outer-grid-cell">header</div>
+        <div class="main-search outer-grid-cell">main-search</div>
+        <div class="main-read outer-grid-cell">main-read</div>
+        <div class="main-buy outer-grid-cell">main-buy</div>
+        <div class="footer outer-grid-cell">footer
+            <div class="footer-grid-wrapper">
+                <div class="footergrid-1 footergrid-cell">1</div>
+                <div class="footergrid-2 footergrid-cell">2</div>
+                <div class="footergrid-3 footergrid-cell">3</div>
+                <div class="footergrid-4 footergrid-cell">4</div>
+                <div class="footergrid-5 footergrid-cell">5</div>
+                <div class="footergrid-6 footergrid-cell">6</div>
+                <div class="footergrid-7 footergrid-cell">7</div>
+                <div class="footergrid-8 footergrid-cell">8</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
