@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --bs-card-border-width: 0px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container_main {
+            top: 250px;
+            padding: 25px;
+
+        }
+        .page-header-menu {
+            background: #333333;
+            width: 83px;
+            height: 70px;
+            border-radius: 5px;
+            left: 78px;
+            top: 48px;
+        }
+        .page-header-menu__div {
+            padding: 5px;
+        }
+        .page-header-menu-text {
+            left: 10px;
+            bottom: 6px;
+            position: absolute;
+            color: white;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 100;
+        }
+        .page-header-familycenter {
+            width: 188px;
+            height: 90px;
+            left: 170px;
+            top: 44px;
+        }
+        .page-header-familycenter__div {
+            width: 350px;
+        }
+        .page-header-search {
+            top: 54px;
+            left: 385px;
+        }
+        .page-header-search__input {
+            width: 308px;
+            height: 49px;
+            border-radius: 5px;
+            background: #E4E3E3;
+            color: #B8B8B8;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .page-header-socnetworks {
+            left: 720px;
+            top: 57px;
+        }
+        .page-family-info {
+            left: 936px;
+            top: 45px;
+        }
+        .page-family-info-text {
+            line-height: 40px;
+            font-size: 27px;
+        }
+        .images_delimiter {
+            height: 100px;
+        }
+        .page-promo-images-main {
+            grid-area: main;
+            width: 613px;
+            height: 410px;
+        }
+        .page-promo-images-parental-support {
+            bottom: 0;
+            width: 336px;
+            height: 205px;
+            background: #085CE8;
+            bottom: 200px;
+        }
+        .page-promo-images-community-initiatives {
+            width: 336px;
+            height: 205px;
+            background: #0483FF;
+        }
+        .page-promo-images-family-preservation {
+            grid-area: family-preservation;
+            width: 336px;
+            height: 205px;
+            background: #08B4E8;
+        }
+        .page-promo-images-text {
+            color: white;
+            font-size: 33px;
+            top: 15px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        .page-promo-images-logo {
+            bottom: 15px;
+            padding-left: 110px;
+            padding-right: 110px;
+        }
+        .page-promo-images-more {
+            width: 336px;
+            height: 205px;
+            background: #08C6FF;
+        }
+        .page-main-slogan h1 {
+            padding-left: 250px;
+        }
+        .page-delimiter {
+            padding-left: 450px;
+        }
+    </style>
+    <!--https://bootstrap-4.ru/docs/5.1/components/navs-tabs/-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+
+</head>
+<body>    
+    <div class="container container_main">
+        <div class="row">
+            <div class="col col-md-auto">
+                <div class="page-header-menu">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="page-header-familycenter">
+                    <img class="page-header-familycenter__img" src="img/big_family.png" alt="big_family">
+                </div>
+            </div>
+            <div class="col-2 col-md-auto">
+                <div class="page-header-search">
+                    <input class="page-header-search__input" type="text" name="search" placeholder="Serch BigFamily Center">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="page-header-socnetworks">
+                    <img src="img/socnetworks.png" alt="socnetworks" usemap="#networklinks">
+                    <map name="networklinks">
+                        <area shape=rect coords="0,0,43,45" href="http://facebook.com" alt="facebook">
+                        <area shape=rect coords="44,0,86,45" href="http://telegram.com" alt="telegram">
+                        <area shape=rect coords="87,0,129,45" href="#" alt="P">
+                        <area shape=rect coords="130,0,174,45" href="http://twitter.com" alt="twitter">
+                    </map>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="page-family-info">
+                    <div class="page-family-info-text">
+                        Improve your family life,<br>
+                        knowledge & understanding!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row images_delimiter">
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="page-promo-images-main">
+                                <img src="img/famyily_photo.png" alt="famyily_photo">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="promowrapper">
+                                <div class="page-promo-images-parental-support">
+                                    <div class="page-promo-images-text">
+                                        Parental<br> Support
+                                    </div>
+                                    <div class="page-promo-images-logo">
+                                        <img src="img/family-in-home.png" alt="family-in-home">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-promo-images-family-preservation">
+                                <div class="page-promo-images-text">
+                                    Family<br> Preservation
+                                </div>
+                                <div class="page-promo-images-logo">
+                                    <img src="img/family-preservation.png" alt="family-in-home">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="page-promo-images-community-initiatives">
+                                <div class="page-promo-images-text">
+                                    Community<br> Initiatives
+                                </div>
+                                <div class="page-promo-images-logo">
+                                    <img src="img/handy.png" alt="family-in-home">
+                                </div>
+                            </div>
+                            <div class="page-promo-images-more">
+                                <div class="page-promo-images-text">
+                                    More to<br> know
+                                </div>
+                                <div class="page-promo-images-logo">
+                                    <img src="img/arow.png" alt="family-in-home">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <div class="row images_delimiter">
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="page-main-slogan">
+                    <h1>We'll  surround your kids with love & care!</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="page-delimiter">
+                    <img src="img/page-delimiter.png" alt="/page-delimiter">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="card border-0" style="width: 620px;">
+                    <div class="card-body">
+                      <h5 class="card-title">About success</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, labore voluptatem nisi minima officiis magnam iure nam, quaerat veniam distinctio sunt deleniti fugit eveniet architecto quia hic. Sint nulla sunt veniam minus quaerat temporibus debitis a commodi beatae rem. Tenetur consequatur quia quo beatae. Facilis iusto dolorum odit dicta molestias!
+                      </p>
+                      <a href="#" class="btn btn-primary">Full  topic</a>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col-6">
+                <div class="card border-0" style="width: 620px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Featured topics</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maxime consectetur itaque! Consequuntur unde commodi eius praesentium odio, dolor velit? Deserunt saepe veniam quos eaque magni! Quis deserunt porro magnam, nostrum voluptas aliquid, provident exercitationem iure asperiores, nesciunt explicabo recusandae accusantium omnis corporis. Iusto quo expedita eveniet reiciendis necessitatibus praesentium.</p>
+                      <a href="#" class="btn btn-primary">See more topics</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-areas:
+            "menu anketa-header anketa-header"
+            "menu anketa-descr anketa-photo"
+            "menu anketa-about anketa-photo"
+            "menu anketa-friends anketa-photo"
+            "menu anketa-things anketa-tumbinails"
+        }
+        .menu {
+            grid-area: menu;
+            width: 300px;
+            border: 1px solid black;
+        }
+        .anketa-header {
+            grid-area: anketa-header;
+            width: 600px;
+            height: 150px;
+        }
+        .anketa-descr {
+            grid-area: anketa-descr;
+            width: 300px;
+            height: 150px;
+        }
+        .anketa-photo {
+            grid-area: anketa-photo;
+            width: 300px;
+        }
+        .anketa-friends {
+            grid-area: anketa-friends;
+            width: 300px;
+            height: 150px;
+        }
+        .anketa-things {
+            grid-area: anketa-things;
+            width: 300px;
+            height: 150px;
+        }
+        .anketa-tumbinails {
+            grid-area: anketa-tumbinails;
+            width: 600px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">menu</div>
+        <div class="anketa-header">anketa-header</div>
+        <div class="anketa-descr">anketa-descr</div>
+        <div class="anketa-photo">anketa-photo</div>
+        <div class="anketa-friends">anketa-friends</div>
+        <div class="anketa-things">anketa-things</div>
+        <div class="anketa-tumbinails">anketa-tumbinails</div>
+    </div>
+</body>
+</html>
