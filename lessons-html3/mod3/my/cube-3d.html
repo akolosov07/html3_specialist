@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 1000px;
+            perspective-origin: center center;
+        }
+        .cube, .cubes {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            transform-style: preserve-3d;
+        }
+
+        .a1 {left: 0px; top: 0}
+        .a2 {left: 200px; top:150px;}
+        .a3 {left: 400px; top: 300px;}
+        .side {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border: 1px dotted red;
+            opacity: 0.6;
+        }
+        .back {
+            background: #cfc;
+            transform: translateZ(-100px);
+        }
+        .left {
+            background: #ccf;
+            transform: rotateY(90deg) translateZ(-100px);
+        }
+        .right {
+            background: #fcc;
+            transform: rotateX(90deg) translateZ(-100px);
+        }
+        .bottom {
+            background: #fcf;
+            transform:  rotateX(-90deg) translateZ(-100px);
+        }
+        .top {
+            background: #ffc;
+            transform: translateX(100px) rotateY(-90deg) ;
+        }
+        .front {
+            background: #cff;
+            transform: translateZ(100px);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="cubes">
+        <div class="cube a1">
+            <div class="back side"></div>
+            <div class="left side"></div>
+            <div class="right side"></div>
+            <div class="top side"></div>
+            <div class="front side"></div>
+            <div class="bottom side"></div>
+        </div>
+
+        <div class="cube a2">
+            <div class="back side"></div>
+            <div class="left side"></div>
+            <div class="right side"></div>
+            <div class="top side"></div>
+            <div class="front side"></div>
+            <div class="bottom side"></div>
+        </div>
+
+        <div class="cube a3">
+            <div class="back side"></div>
+            <div class="left side"></div>
+            <div class="right side"></div>
+            <div class="top side"></div>
+            <div class="front side"></div>
+            <div class="bottom side"></div>
+        </div>
+    </div>
+</body>
+</html>

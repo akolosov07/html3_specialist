@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            margin: 300px;
+            grid-template-areas:
+            "sale1 sale2"
+        }
+        .sale_warapper_1 {
+            grid-area: sale1;
+        }
+        .sale_warapper_2 {
+            grid-area: sale2;
+        }
+        .main-cube {
+            position: relative;
+            overflow: hidden;
+            width: 360px;
+            height: 360px;
+            z-index: 3;
+            border: 1px solid black;
+        }
+        .inner-cube {
+            position: absolute;
+            background-color: grey;
+            height: 300px;
+            width: 300px;
+            z-index: 1;
+            top: 10px;
+            left: 10px;
+        }
+        .lenta-cube {
+            position: absolute;
+            background-color: red;
+            z-index: 2;
+            height: 30px;
+            width: 360px;
+            left: -180px;
+            top: -30px;
+            transform: rotate(-45deg) translateY(130px);
+        }
+        .lenta-cube-text {
+            position: absolute;
+            color: white;
+            font-size: 28px;
+            padding-bottom: 2px;
+            padding-left: 130px;
+        }
+        .cut-lenta {
+            position: absolute;
+            width: 320px;
+            height: 320px;
+            top: 20px;
+            left: 20px;
+            overflow: hidden;
+        }
+        .horblackline {
+            position: absolute;
+            width: 100px;
+            height: 20px;
+            background-color: black;
+            top: 170px;
+        }
+        .vertblackline {
+            position: absolute;
+            width: 30px;
+            height: 20px;
+            background-color: black;
+            right: 130px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sale_warapper_1">
+            <div class="main-cube">
+                <div class="cut-lenta">
+                    <div class="lenta-cube">
+                        <div class="lenta-cube-text">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="horblackline"></div>
+                    <div class="vertblackline"></div>
+                    <div class="inner-cube">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sale_warapper_2">
+            <div class="main-cube">
+                <div class="cut-lenta">
+                    <div class="lenta-cube">
+                        <div class="lenta-cube-text">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="horblackline"></div>
+                    <div class="vertblackline"></div>
+                    <div class="inner-cube">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
